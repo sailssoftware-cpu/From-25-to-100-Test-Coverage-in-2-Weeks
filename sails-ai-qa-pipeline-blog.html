@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>From 25% to 100% Test Coverage in 2 Weeks | Sails Software</title>
+<meta name="description" content="A 23-agent AI pipeline took a medical device team from 25% to 100% test coverage in 2 weeks. No code written manually. Full RTM. Entire team contributing.">
+<meta name="keywords" content="AI test automation, QA automation pipeline, AI agent orchestration, Playwright test automation, 100 percent test coverage, BDD Cucumber automation, Jira RTM automation, medical device software testing, AI QA pipeline, agentic AI testing, self-healing tests, Requirements Traceability Matrix automation, Claude AI QA">
+<meta name="author" content="Chandrasekhar Boddi">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sailssoftware.com/blog/ai-test-coverage-pipeline">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="From 25% to 100% Test Coverage in 2 Weeks — Without Writing a Single Line of Code">
+<meta property="og:description" content="A 23-agent AI pipeline took a medical device team from 25% to 100% test coverage in 2 weeks. No code written manually. Full RTM. Entire team contributing.">
+<meta property="og:url" content="https://sailssoftware.com/blog/ai-test-coverage-pipeline">
+<meta property="og:site_name" content="Sails Software">
+<meta property="og:image" content="https://sailssoftware.com/wp-content/uploads/ai-test-coverage-pipeline-og.jpg">
+<meta property="article:published_time" content="2026-06-26T00:00:00+00:00">
+<meta property="article:author" content="Chandrasekhar Boddi">
+<meta property="article:section" content="QA Automation">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="From 25% to 100% Test Coverage in 2 Weeks — Without Writing a Single Line of Code">
+<meta name="twitter:description" content="A 23-agent AI pipeline. 250+ requirements automated. 1,800+ test scenarios. Zero lines of code written manually.">
+<meta name="twitter:image" content="https://sailssoftware.com/wp-content/uploads/ai-test-coverage-pipeline-og.jpg">
+<meta name="twitter:site" content="@SailsSoftware">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- JSON-LD Schemas -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "From 25% to 100% Test Coverage in 2 Weeks — Without Writing a Single Line of Code",
+  "description": "How a 23-agent AI orchestration pipeline took a medical device software team from 25% to 100% automated test coverage in 2 weeks — without writing a single line of code.",
+  "image": "https://sailssoftware.com/wp-content/uploads/ai-test-coverage-pipeline-og.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Chandrasekhar Boddi",
+    "jobTitle": "Lead SDET",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Sails Software",
+      "url": "https://sailssoftware.com"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sails Software",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sailssoftware.com/wp-content/uploads/sails-logo.png"
+    }
+  },
+  "datePublished": "2026-06-26",
+  "dateModified": "2026-06-26",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sailssoftware.com/blog/ai-test-coverage-pipeline"
+  },
+  "keywords": ["AI test automation", "QA pipeline", "agent orchestration", "Playwright", "test coverage", "RTM automation", "medical device software testing", "self-healing tests"],
+  "articleSection": "QA Automation",
+  "wordCount": "1800",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".sails-hero h1", ".sails-hero-sub", ".sails-insight", ".sails-callout"]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sails Software",
+  "url": "https://sailssoftware.com",
+  "logo": "https://sailssoftware.com/wp-content/uploads/sails-logo.png",
+  "sameAs": [
+    "https://www.linkedin.com/company/sails-software",
+    "https://twitter.com/SailsSoftware"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sailssoftware.com"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sailssoftware.com/blog"},
+    {"@type": "ListItem", "position": 3, "name": "From 25% to 100% Test Coverage in 2 Weeks", "item": "https://sailssoftware.com/blog/ai-test-coverage-pipeline"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How did the team go from 25% to 100% test coverage in 2 weeks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By replacing manual test writing with a 23-agent AI orchestration pipeline. Instead of asking AI to generate code in a chat window, the team built a pipeline where Claude agents handle the entire workflow — from fetching Jira requirements to writing Playwright tests, self-healing failures, creating RTM tickets, and merging PRs — automatically. The whole team contributed, not just QA engineers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the pipeline require knowledge of Playwright or test frameworks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Contributors only need to know the feature they are testing. The pipeline encodes all framework knowledge — page object patterns, selector strategies, BDD syntax, CI parity configuration, known anti-patterns — and enforces them automatically. Developers and business analysts ran it independently without any training."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Known Issues Log and how does it work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Known Issues Log is a cross-PR pattern memory that accumulates every anti-pattern discovered during pipeline runs. The Generate Test Code agent reads it before writing. The Static Analysis agent treats escalated entries as automatic BLOCKERs. A pattern seen twice becomes escalated; three or more times becomes a hard BLOCKER that prevents code from passing static analysis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the self-healing test agent work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When tests fail, the Self-Heal agent reads the Playwright error trace, identifies the root cause (selector problem, timing issue, data dependency, or app defect), cross-references the Known Issues Log to avoid reintroducing known-bad patterns, applies a targeted fix, and re-runs affected scenarios. It loops until 100% pass rate is achieved or a hard cap is reached. The 100% pass gate is non-negotiable before delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does automated RTM look like with this pipeline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every Jira requirement processed through the pipeline gets a linked Task ticket and a set of Test tickets — one per passing scenario — automatically. All tickets are in the correct Jira state when the PR merges. The Jira issue link tree becomes the Requirements Traceability Matrix: real-time, always accurate, no spreadsheet, no manual entry."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many human gates are in the pipeline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three. (1) Requirement Update Approval — team reviews agent findings before code is written. (2) Feature File Approval — team reviews the BDD feature file before TypeScript is generated. (3) Human Final Review — a team member reviews the final PR diff before it merges to master. Human judgment is preserved at every critical decision point."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How the 23-Agent AI Test Pipeline Works",
+  "description": "A phase-by-phase breakdown of how the AI orchestration pipeline takes a Jira ticket to a merged, fully tested, RTM-linked PR.",
+  "step": [
+    {"@type": "HowToStep", "position": 1, "name": "Phase 1 — Requirement Intake", "text": "A developer drops a Jira ticket number into the pipeline. Three agents automatically fetch the ticket, create a linked task, assign it, and transition Jira to In Progress."},
+    {"@type": "HowToStep", "position": 2, "name": "Phase 2 — Analysis & Discovery", "text": "Agents read the requirement, browse the live application for DOM elements and selectors, identify reusable steps, surface edge cases, and present findings for human approval before any code is written."},
+    {"@type": "HowToStep", "position": 3, "name": "Phase 3 — Specification & Code Generation", "text": "Agents create a feature branch, write the BDD feature file (human-approved), generate page objects and step definitions following the Known Issues Log, and run static analysis with escalated BLOCKERs."},
+    {"@type": "HowToStep", "position": 4, "name": "Phase 4 — Test Execution & Self-Healing", "text": "Tests run with 4 parallel workers matching CI configuration. The self-heal agent diagnoses failures, applies targeted fixes, and loops until 100% pass rate. No failing test reaches delivery."},
+    {"@type": "HowToStep", "position": 5, "name": "Phase 5 — Delivery, Review & Traceability", "text": "Agents create Jira test tickets per scenario, commit and push test files only, raise a PR, run automated PR review, apply fixes, pass human final review, auto-merge, and append new patterns to the Known Issues Log."}
+  ]
+}
+</script>
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    --bg-page: #000000;
+    --bg-hero: #061421;
+    --bg-card: #112436;
+    --bg-card-alt: #0d1e30;
+    --cyan: #00B9FF;
+    --cyan-dim: rgba(0,185,255,0.12);
+    --navy: #064A70;
+    --mid-blue: #0C8DC6;
+    --text-white: #FFFFFF;
+    --text-muted: #8faec9;
+    --text-body: #c8daea;
+    --border: rgba(0,185,255,0.15);
+    --green: #00B9FF;
+    --red: #0C8DC6;
+    --amber: #0C8DC6;
+    --font: 'Poppins', sans-serif;
+    --reading-w: 780px;
+    --radius: 12px;
+  }
+
+html { scroll-behavior: smooth; }
+  body { background: var(--bg-page); color: var(--text-body); font-family: var(--font); font-size: 16px; line-height: 1.75; -webkit-font-smoothing: antialiased; }
+
+/* PROGRESS */
+  #sails-progress-bar { position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: linear-gradient(90deg, var(--cyan), var(--mid-blue)); z-index: 9999; transition: width 0.1s linear; }
+
+/* HERO */
+  .sails-hero { background: var(--bg-hero); padding: 80px 24px 72px; border-bottom: 1px solid var(--border); position: relative; overflow: hidden; }
+  .sails-hero::before { content: ''; position: absolute; top: -120px; right: -120px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(0,185,255,0.08) 0%, transparent 70%); pointer-events: none; }
+  .sails-hero-inner { max-width: var(--reading-w); margin: 0 auto; }
+  .sails-eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cyan); margin-bottom: 24px; }
+  .sails-eyebrow::before { content: ''; display: block; width: 28px; height: 2px; background: var(--cyan); border-radius: 2px; }
+  .sails-hero h1 { font-size: clamp(26px, 5vw, 46px); font-weight: 700; color: var(--text-white); line-height: 1.18; letter-spacing: -0.02em; margin-bottom: 20px; }
+  .sails-hero h1 em { font-style: normal; color: var(--cyan); }
+  .sails-hero-sub { font-size: clamp(15px, 2vw, 18px); font-weight: 400; color: var(--text-muted); max-width: 640px; line-height: 1.65; margin-bottom: 36px; }
+  .sails-meta { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; margin-bottom: 16px; }
+  .sails-meta-item { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 500; color: var(--text-muted); }
+  .sails-meta-item svg { width: 14px; height: 14px; stroke: var(--cyan); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+  .sails-tag-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+  .sails-tag { background: var(--cyan-dim); border: 1px solid rgba(0,185,255,0.25); color: var(--cyan); font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; }
+
+/* BODY */
+  .sails-body { max-width: var(--reading-w); margin: 0 auto; padding: 64px 24px 80px; }
+
+/* INSIGHT */
+  .sails-insight { background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid var(--cyan); border-radius: var(--radius); padding: 28px 32px; margin: 0 0 52px; }
+  .sails-insight-label { font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--cyan); margin-bottom: 10px; }
+  .sails-insight p { font-size: 16px; font-weight: 500; color: var(--text-white); line-height: 1.6; }
+
+/* PROSE */
+  .sails-prose h2 { font-size: clamp(20px, 3vw, 26px); font-weight: 700; color: var(--text-white); margin: 56px 0 18px; letter-spacing: -0.01em; display: flex; align-items: center; gap: 14px; line-height: 1.25; }
+  .sails-h2-num { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 8px; background: var(--cyan-dim); border: 1px solid rgba(0,185,255,0.3); color: var(--cyan); font-size: 13px; font-weight: 700; flex-shrink: 0; }
+  .sails-prose p { font-size: 16px; color: var(--text-body); margin-bottom: 22px; line-height: 1.8; }
+  .sails-prose strong { color: var(--text-white); font-weight: 600; }
+
+/* CALLOUT */
+  .sails-callout { margin: 40px 0; padding: 28px 32px; background: #00B9FF; border: none; border-radius: var(--radius); position: relative; }
+  .sails-callout::before { content: '\201C'; font-size: 72px; line-height: 1; color: #ffffff; opacity: 0.5; position: absolute; top: 10px; left: 20px; font-family: Georgia, serif; }
+  .sails-callout p { font-size: clamp(17px, 2.5vw, 21px); font-weight: 600; color: #000000; line-height: 1.55; margin: 0; padding-left: 16px; position: relative; z-index: 1; }
+
+/* STATS STRIP */
+  .sails-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin: 48px 0; }
+  .sails-stat { background: var(--bg-card); padding: 24px 16px; text-align: center; }
+  .sails-stat-num { font-size: clamp(24px, 4vw, 38px); font-weight: 800; line-height: 1; margin-bottom: 8px; letter-spacing: -0.02em; }
+  .sails-stat-num.cyan { color: var(--cyan); }
+  .sails-stat-num.green { color: var(--cyan); }
+  .sails-stat-num.amber { color: var(--amber); }
+  .sails-stat-num.red { color: var(--red); }
+  .sails-stat-label { font-size: 10.5px; font-weight: 500; color: #ffffff; line-height: 1.45; }
+
+/* DIAGRAM WRAPPER */
+  .sails-diagram-wrap { margin: 48px 0; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+  .sails-diagram-label { background: var(--navy); padding: 10px 20px; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cyan); display: flex; align-items: center; gap: 8px; }
+  .sails-diagram-label::before { content: ''; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); opacity: 0.7; }
+  .sails-diagram-scroll { background: #000000; overflow: hidden; }
+  .sails-diagram-scroll svg { display: block; width: 100%; height: auto; }
+  .sails-diagram-caption { background: var(--bg-card-alt); padding: 12px 20px; font-size: 12px; color: var(--text-muted); line-height: 1.6; border-top: 1px solid var(--border); }
+
+/* PHASE CARDS */
+  .sails-phases { display: flex; flex-direction: column; gap: 16px; margin: 36px 0 52px; }
+
+.sails-phase-agents { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-left: auto; }
+
+.sails-phase ul li::before { content: '→'; color: var(--cyan); font-size: 12px; margin-top: 1px; flex-shrink: 0; }
+  .sails-phase.human-gate { border-left-color: #d29922; }
+  .sails-phase.human-gate .sails-phase-num { background: rgba(0,185,255,0.12); border-color: rgba(0,185,255,0.3); color: #ffffff; }
+  .sails-gate-badge { display: inline-flex; align-items: center; gap: 5px; background: rgba(210,153,34,0.1); border: 1px dashed #d29922; color: #ffffff; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 10px; border-radius: 6px; margin-left: 8px; }
+
+/* DATA TABLE */
+  .sails-table-wrap { margin: 32px 0; overflow-x: auto; border-radius: var(--radius); border: 1px solid var(--border); }
+  .sails-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .sails-table thead tr { background: var(--navy); }
+  .sails-table th { padding: 14px 18px; text-align: left; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cyan); }
+  .sails-table td { padding: 13px 18px; color: var(--text-body); border-top: 1px solid var(--border); line-height: 1.5; }
+  .sails-table tbody tr:nth-child(even) td { background: rgba(0,185,255,0.03); }
+  .sails-table td:first-child { color: var(--text-muted); font-size: 13px; }
+  .sails-table td:last-child { color: var(--text-white); font-weight: 600; }
+  .sails-num-green { color: var(--cyan) !important; }
+  .sails-num-cyan { color: var(--cyan) !important; }
+  .sails-num-amber { color: var(--amber) !important; }
+
+/* INLINE LINK */
+  .sails-inline-link { color: var(--cyan); text-decoration: none; border-bottom: 1px solid rgba(0,185,255,0.3); transition: border-color 0.2s; }
+  .sails-inline-link:hover { border-color: var(--cyan); }
+
+/* DIVIDER */
+  .sails-divider { height: 1px; background: var(--border); margin: 48px 0; }
+
+/* AUTHOR */
+  .sails-author { display: flex; gap: 20px; align-items: flex-start; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; margin: 0 0 48px; }
+    .sails-author-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 14px;
+    border: 2px solid rgba(0,185,255,0.3);
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+  .sails-author-name { font-size: 15px; font-weight: 700; color: var(--text-white); margin-bottom: 2px; }
+  .sails-author-role { font-size: 12px; font-weight: 500; color: var(--cyan); margin-bottom: 10px; letter-spacing: 0.02em; }
+  .sails-author-bio { font-size: 13px; color: var(--text-muted); line-height: 1.7; margin: 0; }
+
+/* FAQ */
+  .sails-faq-section { margin-top: 64px; padding-top: 48px; border-top: 1px solid var(--border); }
+  .sails-section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--cyan); margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+  .sails-section-label::before { content: ''; display: block; width: 24px; height: 2px; background: var(--cyan); border-radius: 2px; }
+  .sails-faq-title { font-size: clamp(22px, 3.5vw, 30px); font-weight: 700; color: var(--text-white); margin-bottom: 32px; letter-spacing: -0.01em; }
+  .sails-faq { display: flex; flex-direction: column; gap: 12px; }
+  .sails-faq-item { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+  .sails-faq-q { width: 100%; background: none; border: none; padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer; text-align: left; }
+  .sails-faq-q span { font-size: 14px; font-weight: 600; color: var(--text-white); line-height: 1.45; font-family: var(--font); }
+  .sails-faq-chevron { width: 20px; height: 20px; border-radius: 6px; background: var(--cyan-dim); border: 1px solid rgba(0,185,255,0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .sails-faq-chevron svg { width: 12px; height: 12px; stroke: var(--cyan); fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; transition: transform 0.25s; }
+  .sails-faq-item.open .sails-faq-chevron svg { transform: rotate(180deg); }
+  .sails-faq-a { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+  .sails-faq-a-inner { padding: 0 24px 20px; font-size: 14px; color: var(--text-muted); line-height: 1.75; }
+  .sails-faq-item.open .sails-faq-a { max-height: 300px; }
+
+/* CTA */
+  .sails-cta-block { margin-top: 64px; padding: 40px; background: linear-gradient(135deg, #061f35, #0a2f4a); border: 1px solid rgba(0,185,255,0.2); border-radius: 16px; text-align: center; position: relative; overflow: hidden; }
+  .sails-cta-block::before { content: ''; position: absolute; top: -60px; right: -60px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(0,185,255,0.12), transparent 70%); pointer-events: none; }
+  .sails-cta-block h3 { font-size: clamp(18px, 3vw, 24px); font-weight: 700; color: var(--text-white); margin-bottom: 12px; letter-spacing: -0.01em; position: relative; }
+  .sails-cta-block p { font-size: 14px; color: var(--text-muted); margin-bottom: 28px; max-width: 480px; margin-left: auto; margin-right: auto; position: relative; }
+  .sails-cta-btn { display: inline-flex; align-items: center; gap: 10px; background: var(--cyan); color: #000; font-family: var(--font); font-size: 14px; font-weight: 700; padding: 14px 30px; border-radius: 8px; text-decoration: none; letter-spacing: 0.02em; position: relative; transition: opacity 0.2s, transform 0.2s; }
+  .sails-cta-btn:hover { opacity: 0.88; transform: translateY(-1px); }
+  .sails-cta-btn svg { width: 16px; height: 16px; stroke: #000; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+
+/* REVEAL */
+  .sails-reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.55s ease, transform 0.55s ease; }
+  .sails-reveal.visible { opacity: 1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+    .sails-reveal { opacity: 1; transform: none; transition: none; }
+    .sails-faq-a { transition: none; }
+  }
+
+/* RESPONSIVE */
+  @media (max-width: 1024px) { .sails-hero { padding: 64px 24px 56px; } }
+
+@media (max-width: 768px) {
+    .sails-hero { padding: 48px 20px 44px; }
+    .sails-body { padding: 48px 20px 64px; }
+    .sails-stats { grid-template-columns: repeat(3, 1fr); }
+    .sails-insight { padding: 22px; }
+    .sails-callout { padding: 24px 22px; }
+    .sails-cta-block { padding: 32px 24px; }
+    .sails-phase-agents { display: none; }
+    .sails-author { flex-direction: column; gap: 16px; }
+    .sails-table { font-size: 13px; }
+  }
+
+@media (max-width: 480px) {
+    .sails-hero h1 { font-size: 24px; }
+    .sails-stats { grid-template-columns: repeat(3, 1fr); }
+    .sails-faq-q span { font-size: 13px; }
+    .sails-callout::before { font-size: 52px; }
+    .sails-phase { padding: 18px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<div id="sails-progress-bar" aria-hidden="true"></div>
+
+<!-- HERO -->
+<header class="sails-hero">
+  <div class="sails-hero-inner">
+    <div class="sails-eyebrow">QA Automation · AI Orchestration</div>
+    <h1>From <em>25% to 100%</em> Test Coverage<br>in 2 Weeks — Without Writing<br>a Single Line of Code</h1>
+    <p class="sails-hero-sub">A 23-agent AI orchestration pipeline. 250+ requirements automated. 1,800+ test scenarios created. Zero manual code. And a Requirements Traceability Matrix that builds itself.</p>
+    <div class="sails-meta">
+      <div class="sails-meta-item">
+        
+        Chandrasekhar Boddi
+      </div>
+      <div class="sails-meta-item">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        12 min read
+      </div>
+      <div class="sails-meta-item">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        June 26, 2026
+      </div>
+    </div>
+    <div class="sails-tag-row">
+      <span class="sails-tag">QA Automation</span>
+      <span class="sails-tag">AI Agents</span>
+      <span class="sails-tag">Playwright</span>
+      <span class="sails-tag">Medical Device</span>
+    </div>
+  </div>
+</header>
+
+<!-- BODY -->
+<main class="sails-body">
+
+  <div class="sails-insight sails-reveal">
+    <div class="sails-insight-label">The Bottom Line</div>
+    <p>We stopped asking AI to write code. We asked it to <strong>run a pipeline.</strong> That one decision took a regulated medical device software team from 25% to 100% automated test coverage in two weeks — with the entire team contributing, not just QA engineers.</p>
+  </div>
+
+  <!-- Section 1 -->
+  <div class="sails-prose sails-reveal">
+    <h2><span class="sails-h2-num">01</span>Where We Started — and Why Coverage Stalled</h2>
+    <p>Two weeks ago our project sat at 25% automated test coverage. Not because we lacked requirements — we had a full backlog. Not because the QA team wasn't working hard. Because <strong>automation was siloed.</strong></p>
+    <p>QA automation on a regulated medical device platform that interprets genomic variants for clinical labs carries real weight. Every automated test needs a traceable link from requirement to test evidence, a peer-reviewed pull request before merge, human sign-off before code lands in main, consistent patterns across 30+ contributor touchpoints, and Jira tickets in the correct state at every handoff.</p>
+    <p>Only QA engineers who knew the Playwright framework, understood the page object pattern, and had memorised which step definitions already existed could contribute. Developers who built the features and business analysts who wrote the acceptance criteria sat on the sidelines. The bottleneck wasn't effort — it was access.</p>
+    <p>We tried AI code generation. It helped. But copy-pasting from a chat window into an IDE, debugging alone, and manually filing Jira tickets brought the gains back down to earth fast.</p>
+  </div>
+
+  <div class="sails-callout sails-reveal">
+    <p>Coverage stalled at 25% not because we lacked requirements — but because we lacked bandwidth from the narrow group of people who could write the tests.</p>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="sails-prose sails-reveal">
+    <h2><span class="sails-h2-num">02</span>The Shift — Stop Generating Code, Start Orchestrating Agents</h2>
+    <p>The real unlock came when we stopped treating AI as a faster typist and started treating it as an orchestrator. We built an AI agent pipeline where Claude agents don't just write code — <strong>they hand off to each other, gate themselves at quality checkpoints, self-heal when tests fail, and close the Jira loop end-to-end.</strong></p>
+    <p>The key design principle: the pipeline requires <em>zero knowledge of the test framework to use it.</em> The person feeding it a Jira ticket number needs to know the feature. The agents handle everything else — the right patterns, the right selectors, the right file structure, the framework conventions accumulated across every previous PR.</p>
+    <p>The pipeline has <strong>23 orchestrated agents across 5 phases.</strong> Here is how each one works.</p>
+  </div>
+
+  <!-- Architecture Diagram -->
+  <div class="sails-diagram-wrap sails-reveal">
+    <div class="sails-diagram-label">AI Agent Orchestration Pipeline — All 23 Agents</div>
+    <!-- ═══════════════════════════════════════════════════════
+     FORGE PIPELINE — Full redesign, CSS Grid, no container width constraint
+     Sails palette: #00B9FF / #064A70 / #0C8DC6 / #000 / #061421 / #112436
+     ═══════════════════════════════════════════════════════ -->
+
+<div class="fp">
+
+  <!-- HEADER -->
+  <div class="fp-header">
+    <div class="fp-header-title">AI Agent Orchestration Pipeline</div>
+    <div class="fp-header-sub">Jira Requirement → Automated Tests → RTM → Merged PR &nbsp;·&nbsp; Fully Agentic &nbsp;·&nbsp; Self-Improving &nbsp;·&nbsp; Zero Framework Knowledge Required</div>
+  </div>
+
+  <!-- PHASE 1 -->
+  <div class="fp-phase">
+    <div class="fp-phase-label fp-label-blue">Phase 1 &nbsp;·&nbsp; Intake · Analysis · Discovery</div>
+    <div class="fp-row fp-row-7">
+      <div class="fp-node fp-blue"><span class="fp-tag">TRIGGER</span><strong>Jira PR Input</strong><span class="fp-sub">Fetch ticket · AC · context</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-blue"><span class="fp-tag">JIRA API</span><strong>Create Task</strong><span class="fp-sub">Assign · link to req</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-blue"><span class="fp-tag">JIRA</span><strong>→ In Progress</strong><span class="fp-sub">Board reflects reality</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-teal"><span class="fp-tag">ANALYSIS</span><strong>Analyze &amp; Clarify</strong><span class="fp-sub">Reusable steps · edge cases</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-teal"><span class="fp-tag">BROWSER</span><strong>App Review</strong><span class="fp-sub">Live DOM · toasts · modals</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-gate"><span class="fp-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:3px;flex-shrink:0"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>HUMAN GATE 1</span><strong>Req Update Approval</strong><span class="fp-sub">App vs spec gap sign-off</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-teal"><span class="fp-tag">PLAYWRIGHT</span><strong>DOM Gathering</strong><span class="fp-sub">Exact selectors · hidden inputs</span></div>
+    </div>
+  </div>
+
+  <div class="fp-down">↓</div>
+
+  <!-- PHASE 2 -->
+  <div class="fp-phase">
+    <div class="fp-phase-label fp-label-mid">Phase 2 &nbsp;·&nbsp; Spec · Code Generation · Static Analysis</div>
+    <div class="fp-row fp-row-5">
+      <div class="fp-node fp-mid"><span class="fp-tag">GIT</span><strong>Create Feature Branch</strong><span class="fp-sub">Correct base · naming conv.</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-mid"><span class="fp-tag">SPEC</span><strong>Draft Feature File</strong><span class="fp-sub">Cucumber BDD · tags</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-gate"><span class="fp-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:3px;flex-shrink:0"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>HUMAN GATE 2</span><strong>Feature File Approval</strong><span class="fp-sub">GO / NO-GO · redraft loop</span><span class="fp-badge">NO-GO ↺ redraft</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-mid"><span class="fp-tag">CODE AGENT</span><strong>Generate Test Code</strong><span class="fp-sub">Page objects · step defs</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-mid"><span class="fp-tag">STATIC ANALYSIS</span><strong>Static Analysis</strong><span class="fp-sub">tsc · pattern BLOCKERs</span></div>
+    </div>
+  </div>
+
+  <div class="fp-down">↓</div>
+
+  <!-- PHASE 3 -->
+  <div class="fp-phase">
+    <div class="fp-phase-label fp-label-navy">Phase 3 &nbsp;·&nbsp; Test Execution · Self-Heal</div>
+    <div class="fp-row fp-row-2">
+      <div class="fp-node fp-navy"><span class="fp-tag">TEST RUNNER · 4 PARALLEL WORKERS</span><strong>Run Generated Tests</strong><span class="fp-sub">Headless Playwright · CI parity</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-navy fp-node-alert"><span class="fp-tag">SELF-HEAL AGENT</span><strong>Self-Heal ↺</strong><span class="fp-sub fp-alert">100% PASS GATE — non-negotiable</span><span class="fp-badge fp-badge-navy">retry loop until 100%</span></div>
+    </div>
+  </div>
+
+  <div class="fp-down">↓</div>
+
+  <!-- PHASE 4 -->
+  <div class="fp-phase">
+    <div class="fp-phase-label fp-label-blue">Phase 4 &nbsp;·&nbsp; Delivery · Review · RTM · Merge · Learn</div>
+    <div class="fp-row fp-row-5">
+      <div class="fp-node fp-cyan"><span class="fp-tag">JIRA · RTM</span><strong>Create Test Tickets</strong><span class="fp-sub">1 ticket/scenario · req link = RTM</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-cyan"><span class="fp-tag">GIT · GITHUB</span><strong>Commit · Push · PR</strong><span class="fp-sub">Test files only</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-cyan"><span class="fp-tag">JIRA</span><strong>→ Ready for Review</strong><span class="fp-sub">Board reflects real state</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-cyan"><span class="fp-tag">PR REVIEWER</span><strong>Automated PR Review</strong><span class="fp-sub">Framework standards</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-gate"><span class="fp-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:3px;flex-shrink:0"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>HUMAN GATE 3</span><strong>Human Final Review</strong><span class="fp-sub">GO / NO-GO before merge</span></div>
+    </div>
+    <div class="fp-row fp-row-3 fp-row-sub">
+      <div class="fp-node fp-cyan"><span class="fp-tag">AUTO-MERGE · CI PASS</span><strong>Auto-Merge to Master</strong><span class="fp-sub">Squash · delete branch</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-cyan"><span class="fp-tag">JIRA</span><strong>→ Done</strong><span class="fp-sub">Task closed · fully traceable</span></div>
+      <div class="fp-arr">→</div>
+      <div class="fp-node fp-cyan"><span class="fp-tag">LEARN AGENT</span><strong>Pattern Tracker</strong><span class="fp-sub">Append Known Issues Log ↺</span></div>
+    </div>
+  </div>
+
+  <!-- KNOWN ISSUES LOG -->
+  <div class="fp-kil">
+    <div class="fp-kil-title"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:6px;flex-shrink:0"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg>Known Issues Log — Cross-PR Pattern Memory</div>
+    <div class="fp-kil-grid">
+      <div class="fp-kil-col">
+        <div class="fp-kil-label fp-kil-read">READ BY</div>
+        <ul>
+          <li>Generate Test Code (avoid patterns)</li>
+          <li>Static Analysis (escalated = BLOCKER)</li>
+          <li>Self-Heal (known-bad selectors)</li>
+        </ul>
+      </div>
+      <div class="fp-kil-divider"></div>
+      <div class="fp-kil-col">
+        <div class="fp-kil-label fp-kil-write">WRITTEN BY</div>
+        <ul>
+          <li>Pattern Tracker after every merge</li>
+          <li>2+ occurrences → ESCALATED</li>
+          <li>3+ occurrences → AUTO-BLOCKER</li>
+          <li>Pipeline improves with each PR</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="fp-stats">
+    <div class="fp-stat fp-stat-hero">
+      <div class="fp-stat-label">COVERAGE IN 2 WEEKS</div>
+      <div class="fp-stat-value"><span class="fp-red">25%</span> → <span class="fp-cyan-t">100%</span></div>
+      <div class="fp-stat-sub">Entire team · Zero framework knowledge</div>
+    </div>
+    <div class="fp-stat">
+      <div class="fp-stat-num fp-cyan-t">250+</div>
+      <div class="fp-stat-meta">Requirements<br>Automated</div>
+    </div>
+    <div class="fp-stat">
+      <div class="fp-stat-num fp-cyan-t">1,800+</div>
+      <div class="fp-stat-meta">Test Scenarios<br>Created</div>
+    </div>
+    <div class="fp-stat">
+      <div class="fp-stat-num fp-mid-t">1,800+</div>
+      <div class="fp-stat-meta">RTM Tickets<br>Auto-Created</div>
+    </div>
+    <div class="fp-stat">
+      <div class="fp-stat-num fp-mid-t">4×</div>
+      <div class="fp-stat-meta">Parallel Workers<br>CI Parity</div>
+    </div>
+    <div class="fp-stat">
+      <div class="fp-stat-num fp-cyan-t">0</div>
+      <div class="fp-stat-meta">Manual Code<br>Written</div>
+    </div>
+    <div class="fp-stat">
+      <div class="fp-stat-num fp-cyan-t">3</div>
+      <div class="fp-stat-meta">Human Gates<br>Per Ticket</div>
+    </div>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="fp-legend">
+    <span class="fp-leg"><span class="fp-dot" style="border-color:#00B9FF"></span>Intake / Jira</span>
+    <span class="fp-leg"><span class="fp-dot" style="border-color:#0C8DC6"></span>Analysis / Discovery</span>
+    <span class="fp-leg"><span class="fp-dot" style="border-color:#0C8DC6;border-style:dotted"></span>Code Generation</span>
+    <span class="fp-leg"><span class="fp-dot" style="border-color:#064A70;background:#0d1825"></span>Test Execution / Self-Heal</span>
+    <span class="fp-leg"><span class="fp-dot" style="border-color:#00B9FF;background:#061e35"></span>Delivery / RTM / Learn</span>
+    <span class="fp-leg"><span class="fp-dot" style="border-color:#d29922;border-style:dashed"></span>Human Gate</span>
+  </div>
+  <div class="fp-insight">Key insight: Contributors only need domain knowledge — framework patterns, selectors, and best practices are encoded in the pipeline and enforced automatically.</div>
+
+</div>
+
+<style>
+/* ── ROOT ── */
+.fp {
+  width: 100%;
+  box-sizing: border-box;
+  background: #000000;
+  border: 1px solid rgba(0,185,255,0.18);
+  border-radius: 14px;
+  overflow: hidden;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.fp *, .fp *::before, .fp *::after { box-sizing: border-box; }
+
+/* ── HEADER ── */
+.fp-header {
+  background: #061421;
+  padding: 22px 24px 18px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,185,255,0.12);
+}
+.fp-header-title {
+  font-size: clamp(15px, 2.5vw, 19px);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  margin-bottom: 6px;
+}
+.fp-header-sub {
+  font-size: clamp(9px, 1.2vw, 11px);
+  color: #8faec9;
+  line-height: 1.6;
+}
+
+/* ── PHASE BAND ── */
+.fp-phase {
+  padding: 16px 16px 18px;
+  border-bottom: 1px solid #112436;
+}
+.fp-phase-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.fp-label-blue  { color: #00B9FF; }
+.fp-label-mid   { color: #0C8DC6; }
+.fp-label-navy  { color: #8faec9; }
+
+/* ── ROW — CSS GRID ── */
+.fp-row {
+  display: grid;
+  gap: 0;
+  align-items: stretch;
+}
+/* Arrow columns = 24px, node columns = 1fr */
+.fp-row-7 { grid-template-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr; }
+.fp-row-5 { grid-template-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr; }
+.fp-row-3 { grid-template-columns: 1fr 24px 1fr 24px 1fr; }
+.fp-row-2 { grid-template-columns: 1fr 24px 1fr; }
+.fp-row-sub { margin-top: 10px; padding-top: 10px; border-top: 1px solid #112436; }
+
+/* ── ARROW ── */
+.fp-arr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #064A70;
+  font-size: 14px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* ── NODE ── */
+.fp-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px 10px;
+  border-radius: 8px;
+  gap: 4px;
+  min-height: 80px;
+}
+.fp-node strong {
+  font-size: clamp(10px, 1.4vw, 12px);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+  display: block;
+}
+.fp-tag {
+  font-size: clamp(7px, 0.9vw, 8.5px);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1.3;
+  display: block;
+}
+.fp-sub {
+  font-size: clamp(7.5px, 1vw, 9px);
+  line-height: 1.4;
+  display: block;
+  color: #ffffff;
+}
+.fp-alert { color: #c8daea !important; font-weight: 700; }
+
+/* ── NODE COLOURS ── */
+.fp-blue  { background: #061421; border: 1.5px solid #00B9FF; }
+.fp-blue  .fp-tag, .fp-blue  .fp-sub { color: #00B9FF; }
+
+.fp-teal  { background: #061421; border: 1.5px solid #0C8DC6; }
+.fp-teal  .fp-tag, .fp-teal  .fp-sub { color: #00B9FF; }
+
+.fp-mid   { background: #061421; border: 1.5px solid #0C8DC6; }
+.fp-mid   .fp-tag, .fp-mid   .fp-sub { color: #0C8DC6; }
+
+.fp-navy  { background: #0d1825; border: 1.5px solid #064A70; }
+.fp-navy  .fp-tag, .fp-navy  .fp-sub { color: #8faec9; }
+
+.fp-cyan  { background: #061421; border: 1.5px solid #00B9FF; }
+.fp-cyan  .fp-tag, .fp-cyan  .fp-sub { color: #00B9FF; }
+
+.fp-gate  { background: #0a0a00; border: 2px dashed #d29922; }
+.fp-gate  .fp-tag  { color: #ffffff; }
+.fp-gate  .fp-sub  { color: #ffffff !important; }
+.fp-gate  strong   { color: #ffffff; }
+
+/* ── BADGES ── */
+.fp-badge {
+  display: inline-block;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  background: rgba(210,153,34,0.12);
+  border: 1px dashed #d29922;
+  color: #ffffff;
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+.fp-badge-navy {
+  background: rgba(6,74,112,0.2);
+  border-color: #064A70;
+  color: #8faec9;
+}
+
+/* ── FLOW DOWN ── */
+.fp-down {
+  text-align: center;
+  font-size: 18px;
+  color: #112436;
+  padding: 3px 0;
+  border-bottom: 1px solid #112436;
+  line-height: 1;
+}
+
+/* ── KNOWN ISSUES LOG ── */
+.fp-kil {
+  margin: 12px 16px;
+  padding: 16px 20px;
+  background: #061421;
+  border: 1.5px dashed rgba(0,185,255,0.25);
+  border-radius: 10px;
+}
+.fp-kil-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.fp-kil-grid {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 0 20px;
+  align-items: start;
+}
+.fp-kil-divider { background: #112436; }
+.fp-kil-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.fp-kil-col ul li {
+  font-size: 11px;
+  color: #ffffff;
+  padding-left: 12px;
+  position: relative;
+  line-height: 1.5;
+}
+.fp-kil-col ul li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: #00B9FF;
+}
+.fp-kil-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.fp-kil-read  { color: #00B9FF; }
+.fp-kil-write { color: #0C8DC6; }
+
+/* ── STATS ── */
+.fp-stats {
+  display: grid;
+  grid-template-columns: 1.6fr repeat(6, 1fr);
+  gap: 0;
+  background: #061421;
+  border-top: 1px solid #112436;
+  padding: 16px 16px;
+  column-gap: 0;
+}
+.fp-stat {
+  text-align: center;
+  padding: 10px 8px;
+  border-right: 1px solid #112436;
+}
+.fp-stat:last-child { border-right: none; }
+.fp-stat-hero {
+  background: #061421;
+  border: 1.5px solid #00B9FF;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-right: 12px;
+  min-width: 160px;
+}
+.fp-stat-label {
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #00B9FF;
+  margin-bottom: 8px;
+}
+.fp-stat-value {
+  font-size: clamp(14px, 2.2vw, 20px);
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+}
+.fp-stat-sub {
+  font-size: 9px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+.fp-stat-num {
+  font-size: clamp(16px, 2.5vw, 22px);
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.fp-stat-meta {
+  font-size: 9.5px;
+  color: #ffffff;
+  line-height: 1.4;
+}
+.fp-cyan-t { color: #00B9FF; }
+.fp-mid-t  { color: #0C8DC6; }
+.fp-red    { color: #c8daea; }
+
+/* ── LEGEND ── */
+.fp-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  padding: 12px 16px 8px;
+  background: #000000;
+  border-top: 1px solid #112436;
+}
+.fp-leg {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  color: #ffffff;
+}
+.fp-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  border: 1.5px solid #00B9FF;
+  background: #061421;
+  flex-shrink: 0;
+}
+
+/* ── INSIGHT ── */
+.fp-insight {
+  background: #000000;
+  padding: 10px 16px 14px;
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #00B9FF;
+  line-height: 1.6;
+  border-top: 1px solid #112436;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .fp-stats { grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .fp-stat-hero { grid-column: 1 / -1; margin-right: 0; margin-bottom: 8px; }
+}
+
+@media (max-width: 700px) {
+  .fp-row-7 { grid-template-columns: 1fr 18px 1fr 18px 1fr 18px 1fr; }
+  /* Phase 1: show 7 nodes in 2 mini-rows */
+  .fp-row-7 { grid-template-columns: repeat(7, 1fr); gap: 6px; }
+  .fp-row-7 .fp-arr { display: none; }
+  .fp-row-5 { grid-template-columns: repeat(5, 1fr); gap: 6px; }
+  .fp-row-5 .fp-arr { display: none; }
+  .fp-row-3 { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .fp-row-3 .fp-arr { display: none; }
+  .fp-row-2 { grid-template-columns: 1fr 1fr; gap: 6px; }
+  .fp-row-2 .fp-arr { display: none; }
+  .fp-node { min-height: 70px; padding: 10px 8px; }
+}
+
+@media (max-width: 520px) {
+  .fp-row-7 { grid-template-columns: repeat(4, 1fr); }
+  .fp-row-5 { grid-template-columns: repeat(3, 1fr); }
+  .fp-row-3 { grid-template-columns: repeat(3, 1fr); }
+  .fp-row-2 { grid-template-columns: 1fr 1fr; }
+  .fp-stats { grid-template-columns: 1fr 1fr 1fr; }
+  .fp-kil-grid { grid-template-columns: 1fr; gap: 14px 0; }
+  .fp-kil-divider { display: none; }
+}
+
+@media (max-width: 380px) {
+  .fp-row-7 { grid-template-columns: repeat(3, 1fr); }
+  .fp-row-5 { grid-template-columns: repeat(2, 1fr); }
+  .fp-stats { grid-template-columns: 1fr 1fr; }
+}
+</style>
+
+    <div class="sails-diagram-caption">23 agents across 5 phases — from Jira ticket to merged PR with full RTM. Human gates at Requirement Approval, Feature File Approval, and Final Review. The Known Issues Log feeds back into every new run.</div>
+  </div>
+
+  <!-- Section 3 — Pipeline Phases -->
+  <div class="sails-prose sails-reveal">
+    <h2><span class="sails-h2-num">03</span>The Pipeline — Phase by Phase</h2>
+    <p>Here is exactly what happens from the moment a Jira ticket number enters the pipeline to the moment a PR merges and the RTM updates.</p>
+  </div>
+
+  <div class="sails-phases sails-reveal">
+
+    <!-- P1: Intake — Solid left accent, clean card -->
+    <div class="sp sp-intake">
+      <div class="sp-head">
+        <div class="sp-badge sp-badge-blue">P1</div>
+        <div class="sp-head-text">
+          <div class="sp-title">Requirement Intake <span class="sp-count">3 Agents</span></div>
+          <div class="sp-tags"><span>JIRA API</span><span>TRIGGER</span></div>
+        </div>
+      </div>
+      <p class="sp-intro">A developer drops a Jira requirement ticket number into the pipeline. Three things happen automatically — zero clicks from the engineer.</p>
+      <ul class="sp-list">
+        <li><strong>Jira PR Input</strong> — fetches the full ticket: acceptance criteria, description, project context</li>
+        <li><strong>Create Task from Requirement</strong> — checks if a linked task exists; if not, creates one, assigns it, and links it back to the requirement</li>
+        <li><strong>Transition: In Progress</strong> — moves the Jira task so the whole team sees who is working on what. The board already reflects reality</li>
+      </ul>
+    </div>
+
+    <!-- P2: Analysis — Two-col layout with icon strip -->
+    <div class="sp sp-analysis">
+      <div class="sp-head">
+        <div class="sp-badge sp-badge-mid">P2</div>
+        <div class="sp-head-text">
+          <div class="sp-title">Analysis &amp; Discovery <span class="sp-count">4 Agents</span></div>
+          <div class="sp-tags"><span>BROWSER AGENT</span><span>ANALYSIS</span></div>
+        </div>
+      </div>
+      <p class="sp-intro">This phase asks the hard questions before writing a single line of code — a discipline most human developers skip.</p>
+      <div class="sp-grid2">
+        <div class="sp-item">
+          <div class="sp-item-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div><strong>Analyze &amp; Clarify</strong> — reads the requirement, searches every existing step definition for reusable steps, identifies edge cases, asks clarifying questions. Won't proceed until ambiguities are resolved</div>
+        </div>
+        <div class="sp-item">
+          <div class="sp-item-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div><strong>App Review</strong> — navigates the live application with a Playwright browser agent and documents every DOM element: selectors, toast notifications, modal IDs, button states</div>
+        </div>
+        <div class="sp-item sp-item-gate">
+          <div class="sp-item-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div><strong>Req Update Approval</strong> <span class="sp-gate-pill">Human Gate 1</span> — presents agent findings for team sign-off before any code is written. If the live app diverges from the requirement, caught here — not in a failing CI run at midnight</div>
+        </div>
+        <div class="sp-item">
+          <div class="sp-item-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+          </div>
+          <div><strong>DOM Gathering</strong> — captures precise locators: hidden elements, multiselect plugins, Bootstrap modal IDs, TinyMCE editor instances. Not guesses. Actuals.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P3: Code Gen — Numbered steps with connecting line -->
+    <div class="sp sp-codegen">
+      <div class="sp-head">
+        <div class="sp-badge sp-badge-navy">P3</div>
+        <div class="sp-head-text">
+          <div class="sp-title">Specification &amp; Code Generation <span class="sp-count">5 Agents</span></div>
+          <div class="sp-tags"><span>BDD</span><span>CODE</span><span>STATIC ANALYSIS</span></div>
+        </div>
+      </div>
+      <div class="sp-steps">
+        <div class="sp-step">
+          <div class="sp-step-num">1</div>
+          <div class="sp-step-body"><strong>Create Feature Branch</strong> — checks out a new branch following naming conventions, always from the correct base. Prevents merge conflicts that plagued early runs</div>
+        </div>
+        <div class="sp-step">
+          <div class="sp-step-num">2</div>
+          <div class="sp-step-body"><strong>Draft Feature File</strong> — writes the Cucumber BDD .feature file: scenarios, Given/When/Then steps, correct tags (@regression, feature tag, Jira ticket tag)</div>
+        </div>
+        <div class="sp-step sp-step-gate">
+          <div class="sp-step-num sp-step-num-gate">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="sp-step-body"><strong>Feature File Approval</strong> <span class="sp-gate-pill">Human Gate 2</span> — team reviews and approves or requests changes. A NO-GO loops the agent back to redraft before a single line of TypeScript is generated</div>
+        </div>
+        <div class="sp-step">
+          <div class="sp-step-num">4</div>
+          <div class="sp-step-body"><strong>Generate Test Code</strong> — produces page object methods and step definitions. Reads the Known Issues Log before writing — every anti-pattern already discovered is avoided from the start</div>
+        </div>
+        <div class="sp-step">
+          <div class="sp-step-num">5</div>
+          <div class="sp-step-body"><strong>Static Analysis</strong> — runs tsc --noEmit and pattern checks. Escalated patterns are automatic BLOCKERs: raw locators in step files, unconditional waitForTimeout, unguarded networkidle. Any fire — code is rejected</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4: Test Execution — Alert/warning style with highlighted gate -->
+    <div class="sp sp-execution">
+      <div class="sp-head">
+        <div class="sp-badge sp-badge-alert">P4</div>
+        <div class="sp-head-text">
+          <div class="sp-title">Test Execution &amp; Self-Healing <span class="sp-count">2 Agents</span></div>
+          <div class="sp-tags"><span>EXECUTOR</span><span>SELF-HEAL</span></div>
+        </div>
+      </div>
+      <p class="sp-intro">Tests run with 4 parallel workers matching CI configuration. Running with fewer workers masks race conditions that will fail in GitHub Actions. The configuration is intentional.</p>
+      <div class="sp-exec-grid">
+        <div class="sp-exec-card sp-exec-run">
+          <div class="sp-exec-label">AGENT 1</div>
+          <div class="sp-exec-title">Run Generated Tests</div>
+          <div class="sp-exec-desc">Executes all scenarios with <code>npm run test:parallel:tag</code> — CI parity from the start. 4 parallel workers, no shortcuts.</div>
+        </div>
+        <div class="sp-exec-card sp-exec-heal">
+          <div class="sp-exec-label">AGENT 2 · LOOP</div>
+          <div class="sp-exec-title">Self-Heal Until 100% Pass</div>
+          <div class="sp-exec-desc">Reads the Playwright error trace, identifies root cause, cross-references the Known Issues Log, applies a targeted fix, re-runs, and loops. <strong>100% pass gate is non-negotiable.</strong> No failing test reaches Phase 5. Hardest ticket: 11 iterations — the agent figured it out.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P5: Delivery — Timeline/checklist style -->
+    <div class="sp sp-delivery">
+      <div class="sp-head">
+        <div class="sp-badge sp-badge-cyan">P5</div>
+        <div class="sp-head-text">
+          <div class="sp-title">Delivery, Review &amp; Traceability <span class="sp-count">9 Agents</span></div>
+          <div class="sp-tags"><span>RTM</span><span>PR</span><span>MERGE</span><span>LEARN</span></div>
+        </div>
+      </div>
+      <div class="sp-checklist">
+        <div class="sp-check"><div class="sp-check-dot"></div><div><strong>Create Test Tickets &amp; Tag Scenarios</strong> — one Jira Test ticket per passing scenario, direct link to parent requirement. This is the RTM. No spreadsheet.</div></div>
+        <div class="sp-check"><div class="sp-check-dot"></div><div><strong>Commit, Push &amp; Create PR</strong> — commits only test files (non-test commits blocked by Static Analysis), pushes to feature branch, raises GitHub PR</div></div>
+        <div class="sp-check"><div class="sp-check-dot"></div><div><strong>Transition: Ready for Review</strong> — moves Jira from In Progress to Ready for Review automatically</div></div>
+        <div class="sp-check"><div class="sp-check-dot"></div><div><strong>Automated PR Review</strong> — checks entire diff against framework standards: BasePage method usage, locator encapsulation, console.log prefixing, SOLID patterns</div></div>
+        <div class="sp-check"><div class="sp-check-dot"></div><div><strong>Fix Issues</strong> — applies PR review findings autonomously, up to 3 rounds, before escalating to a human</div></div>
+        <div class="sp-check sp-check-gate"><div class="sp-check-dot sp-check-dot-gate"></div><div><strong>Human Final Review</strong> <span class="sp-gate-pill">Human Gate 3</span> — a team member reviews the final diff. The last line of defence before code lands in master</div></div>
+        <div class="sp-check"><div class="sp-check-dot"></div><div><strong>Auto-Merge to Master</strong> — squash-merges the PR, deletes the feature branch, requires CI to pass</div></div>
+        <div class="sp-check"><div class="sp-check-dot"></div><div><strong>Transition: Done</strong> — closes the Jira task</div></div>
+        <div class="sp-check sp-check-learn"><div class="sp-check-dot sp-check-dot-learn"></div><div><strong>Pattern Tracker</strong> — reads full run history, extracts new issues, appends to Known Issues Log. 2+ occurrences → ESCALATED. 3+ → AUTO-BLOCKER in all future Static Analysis runs</div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <style>
+  /* ── PHASE CONTAINERS ── */
+  .sails-phases { display: flex; flex-direction: column; gap: 20px; margin-bottom: 0; }
+
+  .sp {
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: var(--font);
+  }
+
+  /* HEADER ROW — shared */
+  .sp-head {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+  }
+  .sp-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    min-height: 60px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #fff;
+    flex-shrink: 0;
+    letter-spacing: 0.02em;
+  }
+  .sp-badge-blue  { background: #064A70; }
+  .sp-badge-mid   { background: #0C8DC6; }
+  .sp-badge-navy  { background: #064A70; }
+  .sp-badge-alert { background: #0a1e30; border-right: 3px solid #0C8DC6; }
+  .sp-badge-cyan  { background: #00B9FF; color: #000; }
+
+  .sp-head-text {
+    flex: 1;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .sp-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .sp-count {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--cyan);
+    background: var(--cyan-dim);
+    border: 1px solid rgba(0,185,255,0.2);
+    padding: 2px 8px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .sp-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .sp-tags span {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 2px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  /* INTRO */
+  .sp-intro {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin: 0;
+    padding: 12px 18px;
+  }
+
+  /* GATE PILL */
+  .sp-gate-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: rgba(210,153,34,0.12);
+    border: 1px dashed #d29922;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    margin-left: 4px;
+    vertical-align: middle;
+  }
+
+  /* ── P1: INTAKE ── */
+  .sp-intake {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 4px solid #064A70;
+  }
+  .sp-intake .sp-head { background: rgba(6,74,112,0.15); border-bottom: 1px solid var(--border); }
+  .sp-list {
+    list-style: none;
+    padding: 14px 18px 18px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sp-list li {
+    font-size: 13px;
+    color: var(--text-body);
+    line-height: 1.6;
+    padding-left: 14px;
+    position: relative;
+  }
+  .sp-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #064A70;
+  }
+  .sp-list li strong { color: #fff; }
+
+  /* ── P2: ANALYSIS — 2-col grid ── */
+  .sp-analysis {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 4px solid #0C8DC6;
+  }
+  .sp-analysis .sp-head { background: rgba(12,141,198,0.1); border-bottom: 1px solid var(--border); }
+  .sp-grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    margin: 0;
+  }
+  .sp-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 14px 16px;
+    background: var(--bg-card);
+    font-size: 13px;
+    color: var(--text-body);
+    line-height: 1.6;
+  }
+  .sp-item strong { color: #fff; }
+  .sp-item-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    background: var(--cyan-dim);
+    border: 1px solid rgba(0,185,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cyan);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .sp-item-gate { background: rgba(210,153,34,0.04); }
+  .sp-item-gate .sp-item-icon { background: rgba(210,153,34,0.1); border-color: rgba(210,153,34,0.25); color: #d29922; }
+
+  /* ── P3: CODE GEN — numbered steps ── */
+  .sp-codegen {
+    background: var(--bg-card-alt);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--cyan);
+  }
+  .sp-codegen .sp-head { background: rgba(0,185,255,0.06); border-bottom: 1px solid var(--border); }
+  .sp-steps {
+    padding: 14px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+  }
+  .sp-step {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    font-size: 13px;
+    color: var(--text-body);
+    line-height: 1.6;
+  }
+  .sp-step strong { color: #fff; }
+  .sp-step-num {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--cyan-dim);
+    border: 1px solid rgba(0,185,255,0.3);
+    color: var(--cyan);
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .sp-step-body { flex: 1; }
+  .sp-step-gate .sp-step-body { padding: 10px 14px; background: rgba(210,153,34,0.05); border: 1px dashed rgba(210,153,34,0.25); border-radius: 8px; }
+  .sp-step-num-gate {
+    background: rgba(210,153,34,0.1);
+    border-color: rgba(210,153,34,0.3);
+    color: #d29922;
+  }
+
+  /* ── P4: EXECUTION — split card ── */
+  .sp-execution {
+    background: var(--bg-card);
+    border: 1px solid rgba(12,141,198,0.3);
+    border-left: 4px solid #0C8DC6;
+  }
+  .sp-execution .sp-head { background: rgba(12,141,198,0.08); border-bottom: 1px solid rgba(12,141,198,0.2); }
+  .sp-exec-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 1px;
+    background: rgba(12,141,198,0.15);
+    margin: 0;
+  }
+  .sp-exec-card {
+    padding: 18px 18px;
+    background: var(--bg-card);
+  }
+  .sp-exec-label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+  }
+  .sp-exec-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  .sp-exec-desc {
+    font-size: 12.5px;
+    color: var(--text-body);
+    line-height: 1.65;
+  }
+  .sp-exec-desc code {
+    font-family: monospace;
+    font-size: 11px;
+    background: rgba(0,185,255,0.08);
+    color: var(--cyan);
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+  .sp-exec-heal { background: var(--bg-card-alt); }
+  .sp-exec-heal strong { color: #fff; }
+
+  /* ── P5: DELIVERY — checklist ── */
+  .sp-delivery {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--cyan);
+  }
+  .sp-delivery .sp-head { background: rgba(0,185,255,0.08); border-bottom: 1px solid var(--border); }
+  .sp-checklist {
+    padding: 14px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .sp-check {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 13px;
+    color: var(--text-body);
+    line-height: 1.6;
+    padding: 9px 0;
+    border-bottom: 1px solid rgba(0,185,255,0.06);
+  }
+  .sp-check:last-child { border-bottom: none; }
+  .sp-check strong { color: #fff; }
+  .sp-check-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background: var(--cyan-dim);
+    border: 1px solid rgba(0,185,255,0.25);
+    flex-shrink: 0;
+    margin-top: 3px;
+    position: relative;
+  }
+  .sp-check-dot::after {
+    content: '';
+    position: absolute;
+    left: 4px; top: 5px;
+    width: 8px; height: 5px;
+    border-left: 2px solid var(--cyan);
+    border-bottom: 2px solid var(--cyan);
+    transform: rotate(-45deg);
+  }
+  .sp-check-gate { background: rgba(210,153,34,0.04); margin: 0 -18px; padding: 9px 18px; }
+  .sp-check-dot-gate { background: rgba(210,153,34,0.1); border-color: rgba(210,153,34,0.3); }
+  .sp-check-dot-gate::after { border-color: #d29922; }
+  .sp-check-learn .sp-check-dot { background: rgba(0,185,255,0.15); border-color: var(--cyan); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .sp-grid2 { grid-template-columns: 1fr; }
+    .sp-exec-grid { grid-template-columns: 1fr; }
+    .sp-badge { width: 44px; font-size: 12px; }
+    .sp-head-text { padding: 12px 14px; }
+    .sp-title { font-size: 13px; }
+  }
+  @media (max-width: 480px) {
+    .sp-intro, .sp-list, .sp-steps, .sp-checklist { padding-left: 14px; padding-right: 14px; }
+    .sp-check { font-size: 12px; }
+    .sp-step { font-size: 12px; }
+    .sp-list li { font-size: 12px; }
+  }
+  </style>
+
+  <!-- Section 4 — Real Numbers -->
+  <div class="sails-prose sails-reveal">
+    <h2><span class="sails-h2-num">04</span>Real Numbers From 250+ Production Runs</h2>
+  </div>
+
+  <div class="sails-stats sails-reveal">
+    <div class="sails-stat">
+      <div class="sails-stat-num cyan">100%</div>
+      <div class="sails-stat-label">25% → 100% in 2 weeks</div>
+    </div>
+    <div class="sails-stat">
+      <div class="sails-stat-num cyan">250+</div>
+      <div class="sails-stat-label">Requirements automated</div>
+    </div>
+    <div class="sails-stat">
+      <div class="sails-stat-num cyan">1,800+</div>
+      <div class="sails-stat-label">Test scenarios created</div>
+    </div>
+    <div class="sails-stat">
+      <div class="sails-stat-num cyan">0</div>
+      <div class="sails-stat-label">Lines of code written</div>
+    </div>
+    <div class="sails-stat">
+      <div class="sails-stat-num cyan">11</div>
+      <div class="sails-stat-label">Max self-heal iterations</div>
+    </div>
+  </div>
+
+  <div class="sails-table-wrap sails-reveal">
+    <table class="sails-table" aria-label="Pipeline production metrics">
+      <thead>
+        <tr><th>Metric</th><th>Result</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Test coverage before pipeline</td><td>25%</td></tr>
+        <tr><td>Test coverage after 2 weeks</td><td class="sails-num-green">100%</td></tr>
+        <tr><td>Requirements automated</td><td class="sails-num-cyan">250+</td></tr>
+        <tr><td>Test scenarios created</td><td class="sails-num-cyan">1,800+</td></tr>
+        <tr><td>Jira RTM tickets auto-created</td><td class="sails-num-cyan">1,800+</td></tr>
+        <tr><td>PRs merged</td><td>250+</td></tr>
+        <tr><td>Clean first-run passes (0 self-heal needed)</td><td>~40% of tickets</td></tr>
+        <tr><td>Most self-heal iterations on a single ticket</td><td>11 (19-scenario modal/multiselect run)</td></tr>
+        <tr><td>Parallel workers during test run</td><td>4 (matching CI)</td></tr>
+        <tr><td>Lines of test code written manually</td><td class="sails-num-green">0</td></tr>
+        <tr><td>Human gates per ticket</td><td>3</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Section 5 — You Don't Need the Framework -->
+  <div class="sails-prose sails-reveal">
+    <h2><span class="sails-h2-num">05</span>You Don't Need to Know the Framework</h2>
+    <p>In the first week, QA engineers were the only contributors. By the second week, developers were running it independently. Not because anyone ran a training session. Because <strong>the workflow abstracts the framework entirely.</strong></p>
+    <p>When a developer drops a Jira ticket into the pipeline, here is everything they need to know:</p>
+    <ul style="list-style:none;padding:0;margin:0 0 22px;display:flex;flex-direction:column;gap:10px;">
+      <li style="display:flex;align-items:flex-start;gap:10px;font-size:15px;color:var(--text-white);font-weight:500;"><span style="color:var(--cyan);flex-shrink:0;">→</span> What the feature does (they already know — they built it)</li>
+      <li style="display:flex;align-items:flex-start;gap:10px;font-size:15px;color:var(--text-white);font-weight:500;"><span style="color:var(--cyan);flex-shrink:0;">→</span> Whether the agent's feature file covers the scenarios correctly (Human Gate 2)</li>
+      <li style="display:flex;align-items:flex-start;gap:10px;font-size:15px;color:var(--text-white);font-weight:500;"><span style="color:var(--cyan);flex-shrink:0;">→</span> Whether the final PR diff looks reasonable (Human Final Review)</li>
+    </ul>
+    <p>They don't need to know what a page object pattern is. How Cucumber BDD syntax works. Why waitForFunction is not the same as waitForTimeout. How to scope a DataTables search selector to &lt;tfoot&gt; instead of &lt;thead&gt;. Why networkidle needs a .catch() guard in parallel execution. How to handle a Bootstrap static modal blocking Playwright navigation.</p>
+    <p><strong>The pipeline knows all of this.</strong> The Known Issues Log has encoded every hard-won lesson from every previous PR. The Static Analysis agent enforces it. The institutional knowledge that previously lived only in the heads of the most experienced QA engineers — now available to everyone, every time, automatically.</p>
+  </div>
+
+  <div class="sails-callout sails-reveal">
+    <p>Coverage moved from 25% to 100% not because we hired more QA engineers. It moved because we removed the prerequisite that you had to be a QA engineer to contribute.</p>
+  </div>
+
+  <!-- Section 6 — Self-Improving System -->
+  <div class="sails-prose sails-reveal">
+    <h2><span class="sails-h2-num">06</span>The Self-Improving System</h2>
+    <p>The part worth dwelling on isn't the speed. It's that <strong>the system gets smarter with every PR.</strong></p>
+    <p>The Pattern Tracker appends to the Known Issues Log after every merge. The Generate Test Code agent reads that log before writing. The Static Analysis agent treats escalated entries as BLOCKERs. The cycle is closed: every run teaches the pipeline something new, and that knowledge propagates into every future run automatically.</p>
+    <p>Early patterns — forgetting to scope DataTables &lt;tfoot&gt; search selectors, using waitForTimeout instead of polling with waitForFunction — were blockers in early tickets. They haven't appeared in new code for weeks. We don't document best practices in a wiki nobody reads. <strong>We encode them as hard gates that fire before code ships.</strong></p>
+    <p>The self-heal agent's effectiveness is bounded by the quality of Playwright's error traces — which are rich enough that root cause diagnosis is almost always correct. The cases where it struggled were genuine upstream app defects. The agent correctly tagged those as @wip rather than attempting to fix the wrong thing. That judgment matters.</p>
+  </div>
+
+  <!-- Section 7 — RTM -->
+  <div class="sails-prose sails-reveal">
+    <h2><span class="sails-h2-num">07</span>What Full RTM Looks Like Now</h2>
+    <p>Our regulatory compliance team needs evidence that every requirement has a tested scenario. Previously, that was a manually maintained spreadsheet — one QA engineer, one Friday afternoon, copying ticket numbers.</p>
+    <p>Now: every Jira requirement processed through the pipeline gets a Task ticket linked to the requirement, a set of Test tickets (one per scenario, each linked to the requirement), every ticket in the correct Jira state when the PR merges, and a live Jira link tree that is the RTM. When the compliance team pulls a Requirements Traceability Matrix report — it's populated from the pipeline output. <strong>Real-time, always accurate, no manual entry.</strong></p>
+  </div>
+
+  <!-- Section 8 — What Surprised Us -->
+  <div class="sails-prose sails-reveal">
+    <h2><span class="sails-h2-num">08</span>What Surprised Us</h2>
+    <p><strong>The DOM Gathering agent is the most valuable node in the pipeline.</strong> Wrong selectors are the number one cause of flaky tests. Having an agent browse the live application and extract precise locators — including hidden inputs, plugin-wrapped elements, and modal IDs — before a single test is written eliminated an entire class of failures that previously consumed most of the debugging time.</p>
+    <p><strong>The Known Issues Log pattern escalation works.</strong> We were skeptical that a text file read by an agent would actually prevent repeat mistakes. It does. Patterns escalated as BLOCKERs have not recurred in new code. The scepticism was wrong.</p>
+    <p><strong>Self-heal loops are bounded by error trace quality.</strong> Playwright's output is rich enough that the agent almost always diagnoses the correct root cause. The hardest ticket — Bootstrap static backdrop modals blocking navigation, multiselect plugins hiding underlying &lt;select&gt; elements, SweetAlert toasts dismissed before the polling loop caught them — required 11 iterations. All resolved.</p>
+  </div>
+
+  <div class="sails-callout sails-reveal">
+    <p>The future of QA automation isn't faster typing. It's removing the requirement to type at all.</p>
+  </div>
+
+  <!-- Section 9 — What's Next -->
+  <div class="sails-prose sails-reveal">
+    <h2><span class="sails-h2-num">09</span>What's Next</h2>
+    <p>Three areas we're expanding into:</p>
+    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+      <li style="display:flex;align-items:flex-start;gap:10px;font-size:15px;color:var(--text-body);"><span style="color:var(--cyan);font-weight:700;flex-shrink:0;">01</span> Expanding the Known Issues Log to include app behaviour quirks — documented environments, feature flags, known defects — so the agent can make smarter scenario design decisions</li>
+      <li style="display:flex;align-items:flex-start;gap:10px;font-size:15px;color:var(--text-body);"><span style="color:var(--cyan);font-weight:700;flex-shrink:0;">02</span> Running the pipeline against the full requirements backlog to surface which tickets still have zero test coverage</li>
+      <li style="display:flex;align-items:flex-start;gap:10px;font-size:15px;color:var(--text-body);"><span style="color:var(--cyan);font-weight:700;flex-shrink:0;">03</span> Integrating test result uploads directly into Jira's test execution records for full traceability from test run to evidence artifact</li>
+    </ul>
+  </div>
+
+  <div class="sails-divider"></div>
+
+  <!-- Author Bio -->
+  <div class="sails-author sails-reveal">
+    <img class="sails-author-avatar" src="data:image/jpeg;base64,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" alt="Chandrasekhar Boddi, Lead SDET at Sails Software" width="110" height="110" style="max-width:110px;width:110px;height:110px;">
+    <div class="sails-author-info">
+      <div class="sails-author-name">Chandrasekhar Boddi</div>
+      <div class="sails-author-role">Lead SDET · Sails Software</div>
+      <p class="sails-author-bio">Chandrasekhar Boddi builds AI-powered QA automation systems for regulated medical device software at Sails Software. He specialises in agent orchestration pipelines, Playwright-based test frameworks, and Requirements Traceability Matrix automation for clinical and compliance-heavy environments.</p>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="sails-faq-section sails-reveal" aria-labelledby="faq-heading">
+    <div class="sails-section-label">Common Questions</div>
+    <h2 id="faq-heading" class="sails-faq-title">Frequently Asked Questions</h2>
+    <div class="sails-faq" role="list">
+
+      <div class="sails-faq-item" role="listitem">
+        <button class="sails-faq-q" aria-expanded="false">
+          <span>How did the team go from 25% to 100% test coverage in 2 weeks?</span>
+          <div class="sails-faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </button>
+        <div class="sails-faq-a" role="region">
+          <div class="sails-faq-a-inner">By replacing manual test writing with a 23-agent AI orchestration pipeline. Instead of asking AI to generate code in a chat window, the team built a pipeline where Claude agents handle the entire workflow — from fetching Jira requirements to writing Playwright tests, self-healing failures, creating RTM tickets, and merging PRs. The whole team contributed, not just QA engineers, which eliminated the bandwidth bottleneck.</div>
+        </div>
+      </div>
+
+      <div class="sails-faq-item" role="listitem">
+        <button class="sails-faq-q" aria-expanded="false">
+          <span>Does the pipeline require knowledge of Playwright or test frameworks?</span>
+          <div class="sails-faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </button>
+        <div class="sails-faq-a" role="region">
+          <div class="sails-faq-a-inner">No. Contributors only need domain knowledge of the feature they're testing. The pipeline encodes all framework knowledge — page object patterns, selector strategies, BDD syntax, CI parity configuration, known anti-patterns — and enforces them automatically. Developers and business analysts ran it independently without any training or Playwright documentation.</div>
+        </div>
+      </div>
+
+      <div class="sails-faq-item" role="listitem">
+        <button class="sails-faq-q" aria-expanded="false">
+          <span>What is the Known Issues Log and how does it prevent repeat mistakes?</span>
+          <div class="sails-faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </button>
+        <div class="sails-faq-a" role="region">
+          <div class="sails-faq-a-inner">The Known Issues Log is a cross-PR pattern memory that accumulates every anti-pattern discovered during pipeline runs. The Generate Test Code agent reads it before writing. The Static Analysis agent treats escalated entries as automatic BLOCKERs. A pattern seen twice becomes escalated; seen three or more times it becomes a hard BLOCKER that prevents code from passing static analysis regardless of who or what wrote it.</div>
+        </div>
+      </div>
+
+      <div class="sails-faq-item" role="listitem">
+        <button class="sails-faq-q" aria-expanded="false">
+          <span>How does the self-healing test agent work?</span>
+          <div class="sails-faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </button>
+        <div class="sails-faq-a" role="region">
+          <div class="sails-faq-a-inner">When tests fail, the Self-Heal agent reads the Playwright error trace, identifies the root cause (selector problem, timing issue, data dependency, or app defect), cross-references the Known Issues Log to avoid reintroducing known-bad patterns, applies a targeted fix, and re-runs affected scenarios. It loops until 100% pass rate is achieved or a hard cap is reached. The 100% pass gate is non-negotiable — no failing test reaches the delivery phase.</div>
+        </div>
+      </div>
+
+      <div class="sails-faq-item" role="listitem">
+        <button class="sails-faq-q" aria-expanded="false">
+          <span>What does automated RTM look like with this pipeline?</span>
+          <div class="sails-faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </button>
+        <div class="sails-faq-a" role="region">
+          <div class="sails-faq-a-inner">Every Jira requirement processed through the pipeline gets a linked Task ticket and a set of Test tickets — one per passing scenario — automatically. All tickets are in the correct Jira state when the PR merges. The Jira issue link tree becomes the Requirements Traceability Matrix: real-time, always accurate, no spreadsheet, no manual entry. Compliance teams pull the RTM report directly from Jira.</div>
+        </div>
+      </div>
+
+      <div class="sails-faq-item" role="listitem">
+        <button class="sails-faq-q" aria-expanded="false">
+          <span>How many human gates are in the pipeline and what do they cover?</span>
+          <div class="sails-faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </button>
+        <div class="sails-faq-a" role="region">
+          <div class="sails-faq-a-inner">Three. (1) Requirement Update Approval — the team reviews agent findings before any code is written. If the live app diverges from the requirement, it's caught here. (2) Feature File Approval — the team reviews the BDD feature file before TypeScript is generated. A NO-GO loops the agent back to redraft. (3) Human Final Review — a team member reviews the final PR diff before it merges to master. Human judgment is preserved at every critical decision point.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="sails-cta-block sails-reveal">
+    <h3>Is Your Team's Test Coverage Stuck?</h3>
+    <p>If you have a backlog of untested requirements and a coverage number that hasn't moved in months, we can show you what this pipeline looks like in practice. You don't need a bigger QA team. You need a better pipeline.</p>
+    <a href="https://sailssoftware.com/contact-us/" class="sails-cta-btn">
+      Talk to Our Team
+      <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+
+</main>
+
+<script>
+(function() {
+  var bar = document.getElementById('sails-progress-bar');
+  if (bar) {
+    window.addEventListener('scroll', function() {
+      var h = document.documentElement;
+      var st = window.scrollY || h.scrollTop;
+      var sh = h.scrollHeight - h.clientHeight;
+      bar.style.width = sh > 0 ? ((st / sh) * 100) + '%' : '0%';
+    }, { passive: true });
+  }
+
+  var reveals = document.querySelectorAll('.sails-reveal');
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(function(el) { obs.observe(el); });
+  } else {
+    reveals.forEach(function(el) { el.classList.add('visible'); });
+  }
+
+  var items = document.querySelectorAll('.sails-faq-item');
+  items.forEach(function(item) {
+    var btn = item.querySelector('.sails-faq-q');
+    if (!btn) return;
+    btn.addEventListener('click', function() {
+      var isOpen = item.classList.contains('open');
+      items.forEach(function(i) {
+        i.classList.remove('open');
+        var b = i.querySelector('.sails-faq-q');
+        if (b) b.setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
